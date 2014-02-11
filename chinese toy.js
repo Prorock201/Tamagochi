@@ -12,6 +12,7 @@ function bindEventHandlers() {
 }
 
 function toFeed(){
+	console.log();
 	$(".head__health__value").text(parseInt($(".head__health__value").text()) + getRandom(2,4));
 	$(".head__love__value").text(parseInt($(".head__love__value").text()) - getRandom(1,2));
 	$(".head__happiness__value").text(parseInt($(".head__happiness__value").text()) - getRandom(1,2));
