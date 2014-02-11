@@ -1,0 +1,93 @@
+	div{
+	 border: 1px solid red;
+	}
+
+	#Body{
+	width: 300px;
+	height: 300px;
+	float: left;
+	}
+
+	#Left-Eyes{
+	width: 70px;
+	height: 30px;
+	margin-top: 60px;
+	margin-left: 55px;
+	float: left;	
+	}
+
+	#Right-Eyes{
+	width: 70px;
+	height: 30px;
+	margin-top: 60px;
+	margin-left: 30px;
+	float: left;
+	}
+
+	#Mouth{
+	width: 140px;
+	height: 45px;
+	margin-top: 60px;
+	margin-left: 70px;
+	float: left;
+	clear: left;
+	}
+
+	#Left-Hand{
+	width: 150px;
+	height: 30px;
+	float: left;
+	margin-top: 115px;
+	}
+
+	#Right-Hand{
+	width: 150px;
+	height: 30px;
+	float: left;
+	margin-top: 115px;
+	}
+
+	#Left-Hand-Fingers{
+	 width: 60px;
+	 height: 60px;
+	 float: left;
+	 margin-top: 115px;	
+	}
+
+	#Right-Hand-Fingers{
+	 width: 60px;
+	 height: 60px;	
+	 float: left;
+	 margin-top: 115px;
+	}
+
+	.left{
+	margin-left: 300px;
+	float: left;
+	clear: left;	
+	}
+
+	#Left-Leg{
+	width: 30px;
+	height: 90px;
+	}
+
+	#Left-Boot{
+	width: 30px;
+	height: 30px;		
+	}
+
+	.right{
+	margin-left: 30px;
+	float: left;
+	}
+
+	#Right-Leg{
+	width: 30px;
+	height: 90px;
+	}
+
+	#Right-Boot{
+	width: 30px;
+	height: 30px;		
+	}
