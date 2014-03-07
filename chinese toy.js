@@ -44,7 +44,7 @@ function getResult(){
 	var love = parseInt($(".head__love__value").text());
 	var happiness = parseInt($(".head__happiness__value").text());
 	var content = $(".content");
-	var body = $(".content__body");
+	window.body = $(".content__body");
     var bodyColor = body.css("background-color");
 	var leftHand = $(".content__left-hand");
 	var rightHand = $(".content__right-hand");
@@ -270,88 +270,116 @@ function getResult(){
 		leftLeg.css("margin-left", "90px");
 	}
 
-	if(love > 0 && love <= 3){
-		if(bodyColor == "rgb(0, 255, 0)"){
-			setAnimationsForElement(body, animation, goToGreen3, 1s);
-			setAnimationsForElement(body, -webkit-animation, goToGreen3, 1s);
+	if(love > 0 && love <= 3) {
+		if(bodyColor == 'rgb(0, 255, 0)') {
+			body.addClass('goToGreen3');
+			setTimeout(function () {
+          		body.removeClass('goToGreen3');
+         	}, 1000);
 			setBgColorForElement(body, 0, 64, 0);
 		}
-	}else if(love > 3 && love <= 6){
-		if(bodyColor == "rgb(128, 255, 128)"){
-			setAnimationsForElement(body, animation, goToGreen2, 1s);
-			setAnimationsForElement(body, -webkit-animation, goToGreen2, 1s);
+	}else if(love > 3 && love <= 6) {
+		if(bodyColor == 'rgb(128, 255, 128)') {
+			body.addClass('goToGreen2');
+			setTimeout(function () {
+          		body.removeClass('goToGreen2');
+         	}, 1000);
 			setBgColorForElement(body, 0, 255, 0);
-		}else if(bodyColor == "rgb(0, 64, 0)"){
-			setAnimationsForElement(body, animation, goFromGreen1, 1s);
-			setAnimationsForElement(body, -webkit-animation, goFromGreen1, 1s);
+		}else if(bodyColor == 'rgb(0, 64, 0)') {
+			body.addClass('goFromGreen1');
+			setTimeout(function () {
+          		body.removeClass('goFromGreen1');
+         	}, 1000);
 			setBgColorForElement(body, 0, 255, 0);
 		}else{
 			setBgColorForElement(body, 0, 255, 0);
 		}
-	}else if(love > 6 && love <= 9){
-		if(bodyColor == "rgb(255, 255, 255)"){
-			setAnimationsForElement(body, animation, goToGreen1, 1s);
-			setAnimationsForElement(body, -webkit-animation, goToGreen1, 1s);
+	}else if(love > 6 && love <= 9) {
+		if(bodyColor == 'rgb(255, 255, 255)') {
+			body.addClass('goToGreen1');
+			setTimeout(function () {
+          		body.removeClass('goToGreen1');
+         	}, 1000);
 			setBgColorForElement(body, 128, 255, 128);
-		}else if(bodyColor == "rgb(0, 255, 0)"){
-			setAnimationsForElement(body, animation, goFromGreen2, 1s);
-			setAnimationsForElement(body, -webkit-animation, goFromGreen2, 1s);
+		}else if(bodyColor == 'rgb(0, 255, 0)') {
+			body.addClass('goFromGreen2');
+			setTimeout(function () {
+          		body.removeClass('goFromGreen2');
+         	}, 1000);
 			setBgColorForElement(body, 128, 255, 128);
 		}else{
 			setBgColorForElement(body, 128, 255, 128);
 		}
-	}else if(love > 9 && love <= 13){
-		if(bodyColor == "rgb(128, 255, 128)"){
-			setAnimationsForElement(body, animation, goFromGreen3, 1s);
-			setAnimationsForElement(body, -webkit-animation, goFromGreen3, 1s);
+	}else if(love > 9 && love <= 13) {
+		if(bodyColor == 'rgb(128, 255, 128)') {
+			body.addClass('goFromGreen3');
+			setTimeout(function () {
+          		body.removeClass('goFromGreen3');
+         	}, 1000);
 			setBgColorForElement(body, 255, 255, 255);
-		}else if(bodyColor == "rgb(255, 128, 255)"){
-			setAnimationsForElement(body, animation, goFromRed4, 1s);
-			setAnimationsForElement(body, -webkit-animation, goFromRed4, 1s);
+		}else if(bodyColor == 'rgb(255, 128, 255)') {
+			body.addClass('goFromRed4');
+			setTimeout(function () {
+          		body.removeClass('goFromRed4');
+         	}, 1000);
 			setBgColorForElement(body, 255, 255, 255);
 		}else{
 			setBgColorForElement(body, 255, 255, 255);
 		}	
-	}else if(love > 13 && love <= 17){
-		if(bodyColor == "rgb(255, 255, 255)"){
-			setAnimationsForElement(body, animation, goToRed1, 1s);
-			setAnimationsForElement(body, -webkit-animation, goToRed1, 1s);
+	}else if(love > 13 && love <= 17) {
+		if(bodyColor == 'rgb(255, 255, 255)') {
+			body.addClass('goToRed1');
+			setTimeout(function () {
+          		body.removeClass('goToRed1');
+         	}, 1000);
 			setBgColorForElement(body, 255, 128, 255);
-		}else if(bodyColor == "rgb(255, 128, 128)"){
-			setAnimationsForElement(body, animation, goFromRed3, 1s);
-			setAnimationsForElement(body, -webkit-animation, goFromRed3, 1s);
+		}else if(bodyColor == 'rgb(255, 128, 128)') {
+			body.addClass('goFromRed3');
+			setTimeout(function () {
+          		body.removeClass('goFromRed3');
+         	}, 1000);
 			setBgColorForElement(body, 255, 128, 255);
 		}else{
 			setBgColorForElement(body, 255, 128, 255);
 		}
-	}else if(love > 17 && love <= 21){
-		if(bodyColor == "rgb(255, 128, 255)"){
-			setAnimationsForElement(body, animation, goToRed2, 1s);
-			setAnimationsForElement(body, -webkit-animation, goToRed2, 1s);
+	}else if(love > 17 && love <= 21) {
+		if(bodyColor == 'rgb(255, 128, 255)') {
+			body.addClass('goToRed2');
+			setTimeout(function () {
+          		body.removeClass('goToRed2');
+         	}, 1000);
 			setBgColorForElement(body, 255, 128, 128);
-		}else if(bodyColor == "rgb(255, 0, 128)"){
-			setAnimationsForElement(body, animation, goFromRed2, 1s);
-			setAnimationsForElement(body, -webkit-animation, goFromRed2, 1s);
+		}else if(bodyColor == 'rgb(255, 0, 128)') {
+			body.addClass('goFromRed2');
+			setTimeout(function () {
+          		body.removeClass('goFromRed2');
+         	}, 1000);
 			setBgColorForElement(body, 255, 128, 128);
 		}else{
 			setBgColorForElement(body, 255, 128, 128);
 		}
-	}else if(love > 21 && love <= 25){
-		if(bodyColor == "rgb(255, 128, 128)"){
-			setAnimationsForElement(body, animation, goToRed3, 1s);
-			setAnimationsForElement(body, -webkit-animation, goToRed3, 1s);
+	}else if(love > 21 && love <= 25) {
+		if(bodyColor == 'rgb(255, 128, 128)') {
+			body.addClass('goToRed3');
+			setTimeout(function () {
+          		body.removeClass('goToRed3');
+         	}, 1000);
 			setBgColorForElement(body, 255, 0, 128);
-		}else if(bodyColor == "rgb(255, 0, 0)"){
-			setAnimationsForElement(body, animation, goFromRed1, 1s);
-			setAnimationsForElement(body, -webkit-animation, goFromRed1, 1s);
+		}else if(bodyColor == 'rgb(255, 0, 0)') {
+			body.addClass('goFromRed1');
+			setTimeout(function () {
+          		body.removeClass('goFromRed1');
+         	}, 1000);
 			setBgColorForElement(body, 255, 0, 128);
 		}else{
 			setBgColorForElement(body, 255, 0, 128);
 		}
-	}else if(love > 25){
-		if(bodyColor == "rgb(255, 0, 128)"){
-			setAnimationsForElement(body, animation, goToRed4, 1s);
-			setAnimationsForElement(body, -webkit-animation, goToRed4, 1s);
+	}else if(love > 25) {
+		if(bodyColor == 'rgb(255, 0, 128)') {
+			body.addClass('goToRed4');
+			setTimeout(function () {
+          		body.removeClass('goToRed4');
+         	}, 1000);
 			setBgColorForElement(body, 255, 0, 0);
 		}
 	}	
@@ -377,15 +405,23 @@ function returnProperValueForColor(firstColor, secondColor, thirdColor) {
 	return 'rgb('+firstColor+','+secondColor+','+thirdColor+')';
 }
 
+function setBgColorForElement(element, firstColor, secondColor, thirdColor) {
+	element.css('background-color', returnProperValueForColor(firstColor, secondColor, thirdColor));
+}
+
+/*function returnProperValueForColor(firstColor, secondColor, thirdColor) {
+	return 'rgb('+firstColor+','+secondColor+','+thirdColor+')';
+}
+
 function setBgColor(firstColor, secondColor, thirdColor) {
-	return "background-color" +","+ returnProperValueForColor(firstColor,  secondColor, thirdColor);
+	return 'background-color'+','+returnProperValueForColor(firstColor,  secondColor, thirdColor);
 }
 
 function setBgColorForElement(element, firstColor, secondColor, thirdColor) {
 	element.css(setBgColor(firstColor, secondColor, thirdColor));
-}
+}*/
 
-function returnAnimationsProperty(name, duration) {
+/*function returnAnimationsProperty(name, duration) {
 	return "name"+""+"duration";
 }
 
@@ -395,5 +431,4 @@ function setAnimations(property, name, duration) {
 
 function setAnimationsForElement(element, property, name, duration) {
 	element.css(setAnimations(property, name, duration));
-}
-
+}*/

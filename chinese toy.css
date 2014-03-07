@@ -240,6 +240,221 @@
  clear: left;
 }
 
+.goToRed1 {
+ animation: goToRed1 1s;
+ -webkit-animation: goToRed1 1s;	
+}
+
+.goToRed2 {
+ animation: goToRed2 1s;
+ -webkit-animation: goToRed2 1s;	
+}
+
+.goToRed3 {
+ animation: goToRed3 1s;
+ -webkit-animation: goToRed3 1s;	
+}
+
+.goToRed4 {
+ animation: goToRed4 1s;
+ -webkit-animation: goToRed4 1s;	
+}
+
+.goFromRed1 {
+ animation: goFromRed1 1s;
+ -webkit-animation: goFromRed1 1s;	
+}
+
+.goFromRed2 {
+ animation: goFromRed2 1s;
+ -webkit-animation: goFromRed2 1s;	
+}
+
+.goFromRed3 {
+ animation: goFromRed3 1s;
+ -webkit-animation: goFromRed3 1s;	
+}
+
+.goFromRed4 {
+ animation: goFromRed4 1s;
+ -webkit-animation: goFromRed4 1s;	
+}
+
+.goToGreen1 {
+ animation: goToGreen1 1s;
+ -webkit-animation: goToGreen1 1s;	
+}
+
+.goToGreen2 {
+ animation: goToGreen2 1s;
+ -webkit-animation: goToGreen2 1s;	
+}
+
+.goToGreen3 {
+ animation: goToGreen3 1s;
+ -webkit-animation: goToGreen3 1s;	
+}
+
+.goFromGreen1 {
+ animation: goFromGreen1 1s;
+ -webkit-animation: goFromGreen1 1s;	
+}
+
+.goFromGreen2 {
+ animation: goFromGreen2 1s;
+ -webkit-animation: goFromGreen2 1s;	
+}
+
+.goFromGreen3 {
+ animation: goFromGreen3 1s;
+ -webkit-animation: goFromGreen3 1s;	
+}
+
+.growStep1__content {
+ animation: growStep1__content 1s;
+ -webkit-animation: growStep1__content 1s;
+}
+
+.growStep1__body {
+ animation: growStep1__body 1s;
+ -webkit-animation: growStep1__body 1s;
+}
+
+.growStep1__left-hand {
+ animation: growStep1__left-hand 1s;
+ -webkit-animation: growStep1__left-hand 1s;
+}
+
+.growStep1__right-hand {
+ animation: growStep1__right-hand 1s;
+ -webkit-animation: growStep1__right-hand 1s;
+}
+
+.growStep1__left-eye {
+ animation: growStep1__left-eye 1s;
+ -webkit-animation: growStep1__left-eye 1s;
+}
+
+.growStep1__eyes {
+ animation: growStep1__eyes 1s;
+ -webkit-animation: growStep1__eyes 1s;
+}
+
+.growStep1__mouth {
+ animation: growStep1__mouth 1s;
+ -webkit-animation: growStep1__mouth 1s;
+}
+
+.growStep1__legs {
+ animation: growStep1__legs 1s;
+ -webkit-animation: growStep1__legs 1s;
+}
+
+.growStep2__body {
+ animation: growStep2__body 1s;
+ -webkit-animation: growStep2__body 1s;
+}
+
+.growStep2__left-hand {
+ animation: growStep2__left-hand 1s;
+ -webkit-animation: growStep2__left-hand 1s;
+}
+
+.growStep2__right-hand {
+ animation: growStep2__right-hand 1s;
+ -webkit-animation: growStep2__right-hand 1s;
+}
+
+.growStep2__left-eye {
+ animation: growStep2__left-eye 1s;
+ -webkit-animation: growStep2__left-eye 1s;
+}
+
+.growStep2__eyes {
+ animation: growStep2__eyes 1s;
+ -webkit-animation: growStep2__eyes 1s;
+}
+
+.growStep2__mouth {
+ animation: growStep2__mouth 1s;
+ -webkit-animation: growStep2__mouth 1s;
+}
+
+.growStep2__legs {
+ animation: growStep2__legs 1s;
+ -webkit-animation: growStep2__legs 1s;
+}
+
+.growStep3__body {
+ animation: growStep3__body 1s;
+ -webkit-animation: growStep3__body 1s;
+}
+
+.growStep3__left-hand {
+ animation: growStep3__left-hand 1s;
+ -webkit-animation: growStep3__left-hand 1s;
+}
+
+.growStep3__right-hand {
+ animation: growStep3__right-hand 1s;
+ -webkit-animation: growStep3__right-hand 1s;
+}
+
+.growStep3__left-eye {
+ animation: growStep3__left-eye 1s;
+ -webkit-animation: growStep3__left-eye 1s;
+}
+
+.growStep3__eyes {
+ animation: growStep3__eyes 1s;
+ -webkit-animation: growStep3__eyes 1s;
+}
+
+.growStep3__mouth {
+ animation: growStep3__mouth 1s;
+ -webkit-animation: growStep3__mouth 1s;
+}
+
+.growStep3__legs {
+ animation: growStep3__legs 1s;
+ -webkit-animation: growStep3__legs 1s;
+}
+
+.growStep4__body {
+ animation: growStep4__body 1s;
+ -webkit-animation: growStep4__body 1s;
+}
+
+.growStep4__left-hand {
+ animation: growStep4__left-hand 1s;
+ -webkit-animation: growStep4__left-hand 1s;
+}
+
+.growStep4__right-hand {
+ animation: growStep4__right-hand 1s;
+ -webkit-animation: growStep4__right-hand 1s;
+}
+
+.growStep4__left-eye {
+ animation: growStep4__left-eye 1s;
+ -webkit-animation: growStep4__left-eye 1s;
+}
+
+.growStep4__eyes {
+ animation: growStep4__eyes 1s;
+ -webkit-animation: growStep4__eyes 1s;
+}
+
+.growStep4__mouth {
+ animation: growStep4__mouth 1s;
+ -webkit-animation: growStep4__mouth 1s;
+}
+
+.growStep4__legs {
+ animation: growStep4__legs 1s;
+ -webkit-animation: growStep4__legs 1s;
+}
+
 /*Animation: сhange color from White to Red*/
 @keyframes goToRed1{
  from {background: rgb(255, 255, 255);}
