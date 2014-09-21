@@ -408,27 +408,3 @@ function returnProperValueForColor(firstColor, secondColor, thirdColor) {
 function setBgColorForElement(element, firstColor, secondColor, thirdColor) {
 	element.css('background-color', returnProperValueForColor(firstColor, secondColor, thirdColor));
 }
-
-/*function returnProperValueForColor(firstColor, secondColor, thirdColor) {
-	return 'rgb('+firstColor+','+secondColor+','+thirdColor+')';
-}
-
-function setBgColor(firstColor, secondColor, thirdColor) {
-	return 'background-color'+','+returnProperValueForColor(firstColor,  secondColor, thirdColor);
-}
-
-function setBgColorForElement(element, firstColor, secondColor, thirdColor) {
-	element.css(setBgColor(firstColor, secondColor, thirdColor));
-}*/
-
-/*function returnAnimationsProperty(name, duration) {
-	return "name"+""+"duration";
-}
-
-function setAnimations(property, name, duration) {
-	return "property"+","+ returnAnimationsProperty(name, duration);
-}
-
-function setAnimationsForElement(element, property, name, duration) {
-	element.css(setAnimations(property, name, duration));
-}*/
